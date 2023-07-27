@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "League Spartan", sans-serif;
+}
+
+body{
+    background-color: Light Grayish rgb(197, 129, 197), hsl(300, 24%, 96%);
+}
+main{
+    background-image: url(bg-top.jpg), url(bg-bottom.jpg);
+    background-size: 50% auto, 50% auto;
+    background-position: center top, center bottom;
+    background-repeat: no-repeat, no-repeat; 
+    width: 1440px;
+    height: 100%;
+    place-content: center;
+    line-height: 1.7;
+    margin: 1rem;
+    display: flex; /* Make main a flex container */
+   flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+   justify-content: center; /* Spread the items evenly across the container */
+   align-items: center; /* Vertically center the items within the container */
+  /* ... Other existing styles for main ... */
+  
+}
+h1{
+   font-weight: 700;
+   color: hsl(300, 43%, 22%);
+   font-size: 35px;
+   line-height: 1.1;
+   font-family:  "League Spartan", sans-serif; /* Use "League Spartan" font for the elements */
+    
+}
+h3{
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    color: hsl(303, 10%, 53%);
+    line-height: 1.1;
+    padding-top: 10px;
+    
+}
+.rated{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: -250px;
+    padding-right: 20px; /* Add padding to move the contents to the right within the border */
+    display: grid;
+    float: right;
+    
+    
+}
+.p{
+  border: 1px solid; 
+   display: flex;
+   line-height: 1.3;
+   background-color: hsl(330, 100%, 98%);
+   border-style: none;
+   width: 380px;
+   color:hsl(300, 43%, 22%);
+   font-size: 12px;
+   font-weight: 700;
+   border-radius: 5px;
+   height: 40px;
+   align-items: center;
+   text-align: right;
+   justify-content: flex-start;
+   margin-bottom: 10px; /* Add margin to separate the .p elements */
+   margin-left: 300px; /* Add margin to move the entire .p element to the right */
+   position: relative;
+
+   
+}
+i {
+    color: rgb(250, 199, 71);
+    padding: 0 -1px; /* Adjust the spacing between stars */
+    font-size: 12px;
+   
+  }
+.rate{
+    padding-left: 25px;
+    font-weight: 700;
+    font-size: 15px;
+    font-family:  "League Spartan", sans-serif; /* Use "League Spartan" font for the elements */
+    
+}
+.star{
+    display: inline-block;
+    justify-content: space-evenly;
+    padding-left: 40px;
+    font-weight: 400; /* Normal font weight */
+    color: rgba(0, 0, 0, 0.9); /* Very dark color (almost black) */
+}
+.word{
+  margin-right: 50px;
+}
+.quote{
+    border: 1px solid;
+   margin-top: 50px; /* Add margin to separate the .quote elements */
+   flex-wrap: wrap;
+  display: inline-block;
+   width: 20%;
+   padding: 10px;
+  background-color: hsl(300, 43%, 22%);
+  color: aliceblue;
+  height: 200px;
+  position: relative;
+  border-radius: 8px;
+  top: -50px;
+}
+.quote-container{
+    text-align: center;
+     margin: 50px 0;
+    justify-content: space-between;
+}
+
+.span{
+    font-size: 15px;
+    color:hsl(333, 80%, 67%);
+}
+.block{
+    font-size: 14px;
+    margin: 10px;
+    line-height: 1.1;
+    
+    display: inline-block;
+}
+img{
+    height: 35px;
+    position: absolute;
+    left: 45px;
+    bottom: 135px;
+    right: 15px;
+    border-radius: 50%;
+}
+.author{
+    line-height: 1.2;
+    margin: 20px;
+}
+.p:nth-child(2){
+    left: 45px;
+}
+.p:nth-child(3){
+    left: 85px;
+}
+.quote:nth-child(2){
+    bottom: -15px;
+    left: 20px;
+    top: -20px;
+}
+.quote:nth-child(3){
+    left: 40px;
+    bottom: -90px;
+    top: 5px;
+}
